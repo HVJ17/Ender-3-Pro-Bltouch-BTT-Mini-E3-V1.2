@@ -7,16 +7,27 @@ Key changes:
 configuration.h
 
 #define CUSTOM_MACHINE_NAME "E3PRO-BLT-SKR"
+
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 96 }
+
 #define DEFAULT_MAX_FEEDRATE          { 500, 500, 20, 25 }
+
 #define BLTOUCH
+
 #define NOZZLE_TO_PROBE_OFFSET { -44, -6, 0 }
+
 #define XY_PROBE_SPEED 10000
+
 #define MULTIPLE_PROBING 2
+
 #define PROBING_FANS_OFF          // Turn fans off when probing
+
 //#define PROBING_STEPPERS_OFF      // Turn steppers off (unless needed to hold position) when probing
+
 #define DELAY_BEFORE_PROBING 200  // (ms) To prevent vibrations from triggering piezo sensors
+
 //#define MIN_SOFTWARE_ENDSTOP_Z
+
 #define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
