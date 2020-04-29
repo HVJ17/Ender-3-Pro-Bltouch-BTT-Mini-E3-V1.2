@@ -2,6 +2,12 @@
 My personal configs that work for my Ender 3 Pro with stock motors, genuine BLTouch for Z homing. BTT Mini E3 V1.2
 Marlin 2.0.5.3
 These are the only two files changed in ths revision.
+
+Caution!
+BLTOUCH is using the Z-STOP! I use BLTOUCH for z-homing
+Z can move below 0! This is needed for easy adjustment of Z offset with #define BABYSTEP_ZPROBE_GFX_OVERLAY 
+My BLOUCH is mouned with default hardware, adjust #define NOZZLE_TO_PROBE_OFFSET { -44, -6, 0 } to fit your setup.
+
 Key changes:
 
 configuration.h
