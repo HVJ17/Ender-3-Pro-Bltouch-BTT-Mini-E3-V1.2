@@ -18,7 +18,9 @@ configuration.h
 #define CUSTOM_MACHINE_NAME "E3PRO-BLT-SKR"
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 96 } //standard extruder
+
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 146 } //Winnsinn extruder
+
 
 #define DEFAULT_MAX_FEEDRATE          { 500, 500, 20, 25 }
 
