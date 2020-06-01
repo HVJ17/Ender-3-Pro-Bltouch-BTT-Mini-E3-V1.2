@@ -18,7 +18,9 @@ configuration.h
 #define CUSTOM_MACHINE_NAME "E3PRO-BLT-SKR"
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 96 } //standard extruder
+
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 146 } //Winnsinn extruder
+
 
 #define DEFAULT_MAX_FEEDRATE          { 500, 500, 20, 25 }
 
@@ -69,9 +71,13 @@ configuration.h
 #define Z_SAFE_HOMING
 
 #define EEPROM_SETTINGS       // Persistent storage with M500 and M501
+
 //#define DISABLE_M503        // Saves ~2700 bytes of PROGMEM. Disable for release!
+
 //#define EEPROM_CHITCHAT       // Give feedback on EEPROM commands. Disable to save PROGMEM.
+
 //#define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
+
 #if ENABLED(EEPROM_SETTINGS)
   #define EEPROM_AUTO_INIT  // Init EEPROM automatically on any errors.
 #endif
